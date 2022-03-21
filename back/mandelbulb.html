@@ -2,16 +2,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="mandelbulb.css" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="formulas">
         <a class="header">zsh</a>
         <a class="shell">λ ~/mandelbulb/ → pdflatex formulas.tex && convert formulas.pdf formulas.png && viu formulas.png</a>
- <img src="formulas/v.png" class="v"/>
- <img src="formulas/phi.png" class="phi"/>
- <img src="formulas/theta.png" class="theta"/>
- <img src="formulas/r.png" class="r"/>
+ <p>
+\(v^n = r^n \langle\sin(n\theta) \cos(n\phi), \sin(n\theta) \sin(n\phi), \cos(n\theta)\rangle\)
+
+\(\phi = \arctan\frac{y}{x}\)    \(\theta = \arccos\frac{z}{r}\)    \(r = \sqrt{x^2 + y^2 + z^2}\)</p>
         <a class="shell">λ ~/mandelbulb/ → bat mandelbulb.css</a>
         <a class="content">118 +   border: var(--flavor) 4px solid;
  119 + }
@@ -27,7 +28,7 @@
       </div>
       <div class="source">
         <a class="header">source</a>
-        <a class="shell">λ ~/mandelbulb/ → viu datamatrix.png</a>
+        <a class="shell">λ ~/mandelbulb/ → perl datamatrix.pl</a>
         <table class="hbc">
           <tr>
             <td class="on"></td>
@@ -658,9 +659,9 @@
       <div class="artwork">
         <a class="header">fractal</a>
         <a class="shell">
-          λ ~/mandelbulb/ → cat assets/mandelbulb.clipboard && viu assets/mandelbulb1337_monochrome.png.png
+          λ ~/mandelbulb/ → cat assets/mandelbulb.clipboard && viu assets/mandelbulb_monochrome.png
           </a>
-          <img src="assets/mandelbulb1337_monochrome.png" class="fractal" />
+          <img src="assets/mandelbulb_monochrome.png" class="fractal" />
           <p>Mandelbulb3Dv18{g.....s/...c3...w.....6...ExHXQqsqK..z9XQ.w5VA1EqxtY3KxBpy1xrsnL1nHdz0f7an.1NEyj.............................
 ...CI8nkYYd2.2........A./..................y.2...wD...Uz6....kF.....M.0/....2.D3...p.....EB.....wFcbDvvtknD/..........G1dkpXm
 1....Uz.EnAnQD12../..........wz.................................U5.....y1...sD...../...z1...sDmV00pX9a3xHnkYMFNCo4z0VykDB7O5o

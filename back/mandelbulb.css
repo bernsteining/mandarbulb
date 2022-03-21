@@ -5,10 +5,10 @@
   https://codepen.io/sosuke/pen/Pjoqqp
   */
 
-  --flavor: rgb(182, 16, 223);
+  /* --flavor: rgb(182, 16, 223);
   --filter: invert(19%) sepia(99%) saturate(6806%) hue-rotate(287deg)
   brightness(99%) contrast(99%);
-  --background: rgb(24, 26, 27);
+  --background: rgb(24, 26, 27); */
 
   /* red on white bg */
   /* --flavor: rgb(255, 0, 0);
@@ -21,9 +21,9 @@
   --background: rgb(255, 255, 255); */
 
   /* purple on white bg */
-  /* --flavor: rgb(139, 0, 139);
+  --flavor: rgb(139, 0, 139);
   --filter: invert(9%) sepia(91%) saturate(6113%) hue-rotate(296deg) brightness(86%) contrast(110%);
-  --background: rgb(255, 255, 255); */
+  --background: rgb(255, 255, 255);
 
   /* black on white bg */
   /* --flavor: rgb(0, 0, 0);
@@ -43,46 +43,34 @@ body,
   width: 1080;
   font-family: monospace;
   background-color: var(--background);
+  position: absolute;
+}
+
+.MathJax {
+  font-size: 1.9em !important;
+  filter: var(--filter);
 }
 
 .formulas {
-  float: left;
   border: var(--flavor) 4px solid;
   width: 59%;
   height: 40%;
   color: var(--flavor);
+  left: 0;
+  display: inline-block;
+  position: relative;
 }
 
-.v {
-  width: 590px;
-  height: 30px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  filter: var(--filter);
-}
-
-.phi {
-  width: 160px;
-  height: 55px;
-  padding-right: 12px;
-  padding-left: 10px;
-  filter: var(--filter);
-}
-
-.theta {
-  width: 160px;
-  height: 65px;
-  padding-right: 12px;
-  padding-bottom: 2px;
-  filter: var(--filter);
-}
-
-.r {
-  width: 230px;
-  height: 40px;
-  padding-bottom: 12px;
-  filter: var(--filter);
+.source {
+  width: 40%;
+  height: 40%;
+  border: var(--flavor) 4px solid;
+  border-top: var(--flavor) 4px solid;
+  border-bottom: var(--flavor) 4px solid;
+  border-left: var(--flavor) 2px solid;
+  display: inline-block;
+  position:absolute;
+  right: 0;
 }
 
 .content {
@@ -111,16 +99,6 @@ body,
   padding-bottom: 10px;
   padding-left: 5px;
   display: block;
-}
-
-.source {
-  float: left;
-  width: 40%;
-  height: 40%;
-  border: var(--flavor) 4px solid;
-  border-top: var(--flavor) 4px solid;
-  border-bottom: var(--flavor) 4px solid;
-  border-left: var(--flavor) 2px solid;
 }
 
 .artwork {
