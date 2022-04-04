@@ -7,3 +7,5 @@ For example:
 ```bash
 convert back.png +level-colors "rgb(130,0,130)", purple/back.png && convert front.png +level-colors "rgb(130,0,130)", purple/front.png
 ```
+
+[result hosted here](https://mandarbulb.glitch.me/)
